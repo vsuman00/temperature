@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.45) 100%);
+  -webkit-backdrop-filter: saturate(3);
+  backdrop-filter: saturate(3);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/924/1022/488/os-x-yosemite-black-wallpaper-thumb.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0.8em;
+  }
+}
+
+main {
+  background-color: rgb(255 255 255 / 31%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  font-weight: 500;
+  padding: 1rem 1rem 2rem 1rem;
+  overflow: auto;
+}
+
+main::-webkit-scrollbar{
+  display: none;
+}
+
+#fa{
+  font-size: 60px;
+}
+
+h1{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 3rem;
+	font-weight: bold;
+	color: rgba(43, 64, 226, 0.496);
+	margin-bottom: 1rem;
+}
+
+p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+	color: rgba(226, 43, 43, 0.496);
+	margin-bottom: 1rem;
+}
+
+label{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 130%;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.496);
+	margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.2rem;
+  font-size: 1.1rem;
+  outline: none;
+  border-radius: 1rem;
+  width: 20rem;
+  text-indent: 0.2rem;
+  background-color: #4b484854;
+}
+
+input:focus {
+  background-color: #ded8d8;
+}
+
+#loadingDiv {
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #535353;
+}
+
+.loader {
+  width: 3.6rem;
+  height: 3.6rem;
+  background: center / contain no-repeat url(../img/loader.gif);
+}
+
+::selection {
+  color: #fdfdfd;
+  background-color: #444;
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 11px;
+  }
+}
